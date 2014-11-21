@@ -22,7 +22,6 @@ featAverage      | Feature: Average of each variable for each activity and each 
 Dataset structure
 -----------------
 
-
 ```r
 str(dtTidy)
 ```
@@ -44,10 +43,8 @@ str(dtTidy)
 ##  - attr(*, ".internal.selfref")=<externalptr>
 ```
 
-
 List the key variables in the data table
 ----------------------------------------
-
 
 ```r
 key(dtTidy)
@@ -59,10 +56,8 @@ key(dtTidy)
 ## [7] "featMagnitude"    "featVariable"     "featAxis"
 ```
 
-
 Show a few rows of the dataset
 ------------------------------
-
 
 ```r
 dtTidy
@@ -95,10 +90,8 @@ dtTidy
 ## 11880:     Jerk     Magnitude           SD       NA    65 -0.58088
 ```
 
-
 Summary of variables
 --------------------
-
 
 ```r
 summary(dtTidy)
@@ -128,10 +121,8 @@ summary(dtTidy)
 ##  Max.   :95.0   Max.   : 0.9745
 ```
 
-
 List all possible combinations of features
 ------------------------------------------
-
 
 ```r
 dtTidy[, .N, by = c(names(dtTidy)[grep("^feat", names(dtTidy))])]
