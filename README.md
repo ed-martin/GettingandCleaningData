@@ -40,5 +40,5 @@ The run.analysis.R script does the following:
 3. Run the R script run_analysis.r. It calls the R Markdown file, run_analysis.Rmd, which contains the bulk of the       code.
 
 ##Outputs produced
-Tidy dataset file DatasetHumanActivityRecognitionUsingSmartphones.txt (tab-delimited text)
-Codebook file codebook.md (Markdown)
+1. Tidy dataset file DatasetHumanActivityRecognitionUsingSmartphones.txt (tab-delimited text)
+2. Codebook file codebook.md (Markdown)
